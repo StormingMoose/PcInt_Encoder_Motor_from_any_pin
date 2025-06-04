@@ -9,8 +9,11 @@ Using this
 
 
 void readEncoder1(){
+
     c = digitalRead(ENCODERC);
+    
     d = digitalRead(ENCODERD);
+    
     if(d != c){
       posi1++;
     }
