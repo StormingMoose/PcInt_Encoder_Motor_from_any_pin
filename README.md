@@ -8,18 +8,18 @@ Found that the pos- was getting twice as often and changed the code to add anoth
 Using this 
 
 
-void readEncoder1(){
+void readEncoder(){
 
-    c = digitalRead(ENCODERC);
+    c = digitalRead(ENCODERA);
     
-    d = digitalRead(ENCODERD);
+    d = digitalRead(ENCODERB);
     
     if(d != c){
       posi1++;
     }
     else{
-      if(cutinhalf1){
+      if(cutinhalf){
       posi1--;
       }
-      cutinhalf1 = !cutinhalf1;
+      cutinhalf = !cutinhalf;
     }
